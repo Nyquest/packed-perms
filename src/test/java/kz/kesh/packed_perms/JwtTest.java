@@ -9,7 +9,9 @@ import org.junit.jupiter.api.Test;
 import javax.crypto.spec.SecretKeySpec;
 import javax.xml.bind.DatatypeConverter;
 import java.security.Key;
+import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -25,6 +27,13 @@ public class JwtTest {
         String jwt = createJWT("111", "center", "surname", 300_000, "AAB");
         System.out.println(jwt);
         assertEquals(jwt.split("\\.").length, 3);
+    }
+
+    @Test
+    public void createJwt2() {
+        List<Integer> list = Arrays.asList(2, 4, 7, 8, 9, 10, 12, 14, 15, 1000, 2005, 10002, 10007);
+        String pack = PackedPerms.pack(list);
+        System.out.println(pack);
     }
 
     /**
