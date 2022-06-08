@@ -7,6 +7,8 @@ import java.util.Collection;
 /**
  * Data structure for packing permission identifiers in the base 64 for transmission inside the JWT.
  * Each permission number is represented by one bit.
+ * @author Naiman Kopeyev
+ * @version 0.1
  */
 public class PackedPerms {
 
