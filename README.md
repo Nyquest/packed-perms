@@ -59,3 +59,7 @@ Where k is the number of checked permission and usually it is not large.
 
 ### Example of use
 In the test class JwtTest.java, you can see an example of using the PackedPerms along with the Jwt token.
+
+### Maven Central Repository
+The library is published in the Maven Central Repository:
+https://mvnrepository.com/artifact/kz.kesh/packed-perms
